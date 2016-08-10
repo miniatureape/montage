@@ -12,8 +12,8 @@ done
 for f in *.jpg; 
 do 
     echo "cropping $f"
-    `convert $f -gravity center -crop 3120x3120+0+0 +repage $f-cropped.jpg`
+    `convert $f -gravity center -crop "$h"x"$h"+0+0 +repage $f-cropped.jpg`
 done
 
 echo "Creating montage"
-result=`montage *-cropped.jpg -geometry 3120x3120+3+3 montage.jpg`
+result=`montage *-cropped.jpg -geometry "$h"x"$h"+20+20 montage.pdf`
