@@ -14,3 +14,5 @@ imagemagick (and ghostscript because one of the imagemagick commands requires it
 ## Usage
 
 Drop it in a folder and ```./montage.sh```
+
+See the example file for an example of the results (note that this example has been reduced in size).
